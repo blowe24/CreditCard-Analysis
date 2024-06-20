@@ -20,7 +20,7 @@ There are so many factors that play into deciding which credit card is best for 
 
 What does this mean for my decision in the future? I am considering either Venture X or Sapphire Preferred because a card with more travel benefits would complement my current credit card stack nicely.
 
-Find on X: brado_cards
+Find me on X: brado_cards
 
 By the slim chance you are reading this and are interested, here in my referral link to the Amex Gold card:
 
