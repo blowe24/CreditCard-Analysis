@@ -14,7 +14,7 @@ I have gotten into the credit card points wave by recently getting the AMEX gold
 3. From there I made a dictionary for the cards and points. The key was the card and the value was total points. I created a function to calculate the points-taking card, amount(for the category), and multiplier for that category. I was then adding those points to the respective card. 
 
 # Conclusion
-![alt text](bar_Chart.png)
+![alt text](bar_Chart.png) ![alt text](spend_Bar.png)
 
 There are so many factors that play into deciding which credit card is best for you. In this analysis, I was able to find out that the Venture X card by Capital One when strictly looking at my spending was the best for points. This card offers a high multiplier on flights and hotels. I currently have domestic round-trip domestic flights and two-night stay booked. These purchases take up a majority of the overall spending I have made. 
 

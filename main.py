@@ -86,6 +86,9 @@ for index, row in multiplier_consise.iterrows():
     total_points += calculatePoints(card, spend['all_other'], multipliers)
     points[card] = total_points
 
+for key in spend:
+    spend[key] = abs(spend[key])
+    
 # Visualizations # seaborn theme
 sns.set_theme(style="white", palette=None)
 sns.color_palette("Blues", as_cmap=True)
@@ -94,6 +97,9 @@ sns.color_palette("Blues", as_cmap=True)
 
 points_df = pd.DataFrame.from_dict(points, orient='index')
 points = dict(sorted(points.items(), key=lambda item: item[1], reverse=True))
+
+spend_df = pd.DataFrame.from_dict(spend, orient='index')
+spend = dict(sorted(spend.items(), key=lambda item: item[1], reverse=True ))
 
 cmap = plt.cm.get_cmap('viridis')
 
@@ -105,3 +111,19 @@ plt.ylabel('Total Points')
 plt.title('Total Potential Points by Card')
 
 plt.show()
+
+sns.barplot(spend)
+
+
+for key in spend:
+    spend[key] = abs(spend[key])
+
+labels = spend.keys()
+sizes = spend.values()
+
+plt.figure(figsize=(8, 8))
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=False, startangle=140)
+plt.title('Spending Distribution')
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.show()
+
