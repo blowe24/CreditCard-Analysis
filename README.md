@@ -9,7 +9,7 @@ I have gotten into the credit card points wave by recently getting the AMEX gold
  I started by getting my statement from my American Express Gold card I currently have. These are purchases I have made over the past month and a half. The main two data points I focused on were the amount spent and the category of the purchases. That file isn't in the repository as it has private information. The second CSV has the different credit cards I wanted to test, annual fees, and multipliers on the most common categories. 
 
  # Process
-1. I started by important necessary libraries, creating DataFrames with the CVS's and condensing them down into only the data needed. 
+1. I started by important necessary libraries, creating DataFrames with the CSV files and condensing them down into only the data needed. 
 2. The next step I took was calculating the amount I spent in each category. I created a dictionary where the key was the category and the value was the total amount paid. 
 3. From there I made a dictionary for the cards and points. The key was the card and the value was total points. I created a function to calculate the points-taking card, amount(for the category), and multiplier for that category. I was then adding those points to the respective card. 
 
